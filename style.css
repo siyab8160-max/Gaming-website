@@ -1,0 +1,202 @@
+/* ===============================
+   GLOBAL STYLING
+=================================*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #1e1e2f, #2d2d44);
+    color: white;
+    text-align: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* ===============================
+   MODE SCREEN
+=================================*/
+
+#mode-screen {
+    margin-top: 50px;
+}
+
+#mode-screen button {
+    background-color: #4e73df;
+    color: white;
+}
+
+
+/* ===============================
+   GAME SCREENS
+=================================*/
+
+#single-screen,
+#competitive-screen {
+    margin-top: 20px;
+}
+/* 
+#single-screen
+{   
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: center;
+} */
+/* ===============================
+   TIMER + INFO BAR
+=================================*/
+
+h3 {
+    margin: 10px 0;
+}
+
+#single-timer,
+#competitive-timer {
+    font-weight: bold;
+    color: #ffd166;
+}
+
+
+/* ===============================
+   COMPETITIVE LAYOUT
+=================================*/
+
+.boards-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap; /* prevents overflow */
+    margin-top: 20px;
+}
+
+.player-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* ===============================
+   SUDOKU GRID
+=================================*/
+ 
+.sudoku-board {
+    display: grid;
+    grid-template-columns: repeat(9, 40px);
+    grid-template-rows: repeat(9, 40px);
+    gap: 0;
+    margin: 15px 0;
+    /* border: 3px solid white; */
+}
+
+.sudoku-board input {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border: 1px solid #999;
+    outline: none;
+    background-color: white;
+    color: black;
+}
+
+/* Prefilled Cells */
+.prefilled {
+    background-color: #d3d3d3 !important;
+    font-weight: bold;
+}
+
+/* 3x3 BOX BORDERS */
+.sudoku-board input:nth-child(3n) {
+    border-right: 2px solid black;
+}
+
+.sudoku-board input:nth-child(n+19):nth-child(-n+27),
+.sudoku-board input:nth-child(n+46):nth-child(-n+54) {
+    border-bottom: 2px solid black;
+}
+
+
+/* ===============================
+   COMPETITIVE INFO
+=================================*/
+
+#score1,
+#score2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #06d6a0;
+}
+
+#lives1,
+#lives2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+
+/* ===============================
+   WINNER DISPLAY
+=================================*/
+
+#winner-display {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff4d6d;
+}
+
+
+/* ===============================
+   RESPONSIVE DESIGN
+=================================*/
+
+@media (max-width: 768px) {
+
+    .boards-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .sudoku-board {
+        grid-template-columns: repeat(9, 30px);
+        grid-template-rows: repeat(9, 30px);
+    }
+
+    .sudoku-board input {
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+    }
+}

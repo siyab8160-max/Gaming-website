@@ -9,18 +9,13 @@
 
     <h1>🧩 Sudoku Battle Arena</h1>
 
-    <!-- =========================
-         MODE SELECTION SCREEN
-    ========================== -->
     <div id="mode-screen">
         <button onclick="startSingle()">Single Player</button>
         <button onclick="startCompetitive()">Competitive Mode</button>
     </div>
 
 
-    <!-- =========================
-         SINGLE PLAYER SCREEN
-    ========================== -->
+
     <div id="single-screen" class="hidden">
 
         <h2>Single Player Mode</h2>
@@ -33,9 +28,7 @@
     </div>
 
 
-    <!-- =========================
-         COMPETITIVE SCREEN
-    ========================== -->
+
     <div id="competitive-screen" class="hidden">
 
         <h2>⚔ Competitive Zone</h2>
@@ -43,7 +36,7 @@
 
         <div class="boards-container">
 
-            <!-- PLAYER 1 -->
+           
             <div class="player-section">
                 <h3>Player 1</h3>
                 <p>Score: <span id="score1">0</span></p>
@@ -52,7 +45,7 @@
                 <div id="board1" class="sudoku-board"></div>
             </div>
 
-            <!-- PLAYER 2 -->
+
             <div class="player-section">
                 <h3>Player 2</h3>
                 <p>Score: <span id="score2">0</span></p>
@@ -69,10 +62,6 @@
 
     </div>
 
-
-    <!-- =========================
-         SCRIPT
-    ========================== -->
     <script src="script.js"></script>
 
 </body>

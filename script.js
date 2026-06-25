@@ -1,6 +1,4 @@
-// =====================================
-// GLOBAL VARIABLES
-// =====================================
+
 
 
 let puzzle1 = [];
@@ -22,9 +20,6 @@ let secondsElapsed = 0;
 
 
 
-// =====================================
-// FETCH SUDOKU FROM API
-// =====================================
 
 async function fetchSudoku(difficulty = "easy") {
 
@@ -49,9 +44,6 @@ async function fetchSudoku(difficulty = "easy") {
 
 
 
-// =====================================
-// SUDOKU SOLVER (BACKTRACKING)
-// =====================================
 
 function solveSudoku(board) {
 
@@ -105,9 +97,6 @@ function isValid(board, row, col, num) {
 }
 
 
-// =====================================
-// TIMER FUNCTIONS
-// =====================================
 
 function startTimer(displayId) {
 
@@ -134,9 +123,7 @@ function stopTimer() {
 }
 
 
-// =====================================
-// START MODES
-// =====================================
+
 async function startSingle() {
 
     currentMode = "single";
@@ -190,9 +177,7 @@ async function startCompetitive() {
 
 
 
-// =====================================
-// RENDER BOARD
-// =====================================
+
 
 function renderBoard(player, containerId) {
 
@@ -224,9 +209,7 @@ function renderBoard(player, containerId) {
 
 
 
-// =====================================
-// HANDLE INPUT
-// =====================================
+
 
 function handleInput(e, row, col, player) {
 
@@ -276,9 +259,7 @@ function handleInput(e, row, col, player) {
 }
 
 
-// =====================================
-// WIN CHECKING
-// =====================================
+
 
 function checkWinner() {
 
@@ -308,9 +289,6 @@ function countEmptyCells() {
 }
 
 
-// =====================================
-// END GAME
-// =====================================
 
 function endGame(winner) {
 
@@ -324,9 +302,6 @@ function endGame(winner) {
 }
 
 
-// =====================================
-// GO BACK
-// =====================================
 
 function goBack() {
 

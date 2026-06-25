@@ -1,6 +1,4 @@
-/* ===============================
-   GLOBAL STYLING
-=================================*/
+
 
 * {
     margin: 0;
@@ -41,9 +39,6 @@ button:hover {
 }
 
 
-/* ===============================
-   MODE SCREEN
-=================================*/
 
 #mode-screen {
     margin-top: 50px;
@@ -55,25 +50,12 @@ button:hover {
 }
 
 
-/* ===============================
-   GAME SCREENS
-=================================*/
 
 #single-screen,
 #competitive-screen {
     margin-top: 20px;
 }
-/* 
-#single-screen
-{   
-    display: flex;
-    flex-direction: column;
-    justify-content:center ;
-    align-items: center;
-} */
-/* ===============================
-   TIMER + INFO BAR
-=================================*/
+
 
 h3 {
     margin: 10px 0;
@@ -86,16 +68,13 @@ h3 {
 }
 
 
-/* ===============================
-   COMPETITIVE LAYOUT
-=================================*/
 
 .boards-container {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 40px;
-    flex-wrap: wrap; /* prevents overflow */
+    flex-wrap: wrap;
     margin-top: 20px;
 }
 
@@ -106,9 +85,7 @@ h3 {
 }
 
 
-/* ===============================
-   SUDOKU GRID
-=================================*/
+
  
 .sudoku-board {
     display: grid;
@@ -116,7 +93,7 @@ h3 {
     grid-template-rows: repeat(9, 40px);
     gap: 0;
     margin: 15px 0;
-    /* border: 3px solid white; */
+
 }
 
 .sudoku-board input {
@@ -130,13 +107,12 @@ h3 {
     color: black;
 }
 
-/* Prefilled Cells */
+
 .prefilled {
     background-color: #d3d3d3 !important;
     font-weight: bold;
 }
 
-/* 3x3 BOX BORDERS */
 .sudoku-board input:nth-child(3n) {
     border-right: 2px solid black;
 }
@@ -147,9 +123,7 @@ h3 {
 }
 
 
-/* ===============================
-   COMPETITIVE INFO
-=================================*/
+
 
 #score1,
 #score2 {
@@ -165,9 +139,6 @@ h3 {
 }
 
 
-/* ===============================
-   WINNER DISPLAY
-=================================*/
 
 #winner-display {
     margin-top: 20px;
@@ -177,9 +148,7 @@ h3 {
 }
 
 
-/* ===============================
-   RESPONSIVE DESIGN
-=================================*/
+
 
 @media (max-width: 768px) {
 
